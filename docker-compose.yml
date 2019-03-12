@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    container_name: troubleshooting
+    image: $BASE_IMAGE
+    ports:
+      - '10040:10040'
+      - '9229:9229'
+    volumes:
+      - .:/var/www
+    command: top
+    environment:
+      NODE_ENV: workstation
+      PORT: 10040

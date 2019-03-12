@@ -1,0 +1,10 @@
+{
+    "host": "localhost",
+    "port": 10040,
+    "log": {
+        "level": "info"
+    },
+    "xkcd": {
+        "host": "https://xkcd.com/info.0.json"
+    }
+}

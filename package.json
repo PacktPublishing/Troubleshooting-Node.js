@@ -1,0 +1,42 @@
+{
+  "name": "troubleshooting-nodejs",
+  "version": "0.1.0",
+  "description": "Troubleshoot and monitor your Node.js applications",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "test": "tape './api/**/**/*test.js' | tap-diff"
+  },
+  "keywords": [
+    "express",
+    "troubleshooting",
+    "debugging",
+    "profiling",
+    "monitoring"
+  ],
+  "engines": {
+    "node": ">= 8.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PacktPublishing/Troubleshooting-Node.js.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "clf-date": "0.1.0",
+    "config": "3.0.1",
+    "compression": "1.7.3",
+    "express": "4.16.4",
+    "morgan": "1.9.1",
+    "node-fetch": "2.3.0",
+    "serve-favicon": "2.5.0",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "5.15.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-promise": "4.0.1",
+    "tap-diff": "0.1.1",
+    "tape": "4.10.1"
+  }
+}
