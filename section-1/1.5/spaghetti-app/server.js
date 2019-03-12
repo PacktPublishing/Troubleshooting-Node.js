@@ -33,7 +33,7 @@ const toNiceDate = (month, day, year) => {
 	return 'Date: ' + date.toLocaleDateString();
 };
 
-let router = Express.Router();
+let router = new Express.Router();
 
 router.get('/', async (req, res) => {
 	logger.verbose(`Request from browser[${req.headers['user-agent']}`);

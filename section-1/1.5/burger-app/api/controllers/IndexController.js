@@ -4,7 +4,7 @@ const { renderHtml } = require('../view/render');
 const getContext = require('../utils/context')
 	.seed(__filename);
 
-let router = express.Router();
+let router = new express.Router();
 
 router.get('/', async (req, res) => {
 	const _C = getContext('get', req);
